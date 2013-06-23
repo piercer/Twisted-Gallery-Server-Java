@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="cglib-2.1.88">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/org.glassfish.hk2.external/cglib/2.1.88/jar/313263b09bebc36894b852645cff31ca0679ca9/cglib-2.1.88.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/org.glassfish.hk2.external/cglib/2.1.88/source/3e65d49a37bfd28ca39a10fc1ff93adabdae13c7/cglib-2.1.88-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
