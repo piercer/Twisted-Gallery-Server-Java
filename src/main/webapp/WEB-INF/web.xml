@@ -8,6 +8,17 @@
         Twisted Gallery Server
     </display-name>
 
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/TGSContext.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>Twisted Gallery Service</servlet-name>
         <servlet-class>
@@ -15,13 +26,13 @@
         </servlet-class>
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>sample.hello.resources</param-value>
+            <param-value>com.dz015.tg.service</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>Twisted Gallery Service</servlet-name>
-        <url-pattern>/gallery/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
