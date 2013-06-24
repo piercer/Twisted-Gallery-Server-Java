@@ -8,30 +8,17 @@
         Twisted Gallery Server
     </display-name>
 
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/TGSContext.xml</param-value>
-    </context-param>
-
-    <listener>
-        <listener-class>
-            org.springframework.web.context.ContextLoaderListener
-        </listener-class>
-    </listener>
-
     <servlet>
-        <servlet-name>Twisted Gallery Service</servlet-name>
-        <servlet-class>
-            org.glassfish.jersey.servlet.ServletContainer
-        </servlet-class>
+        <servlet-name>TGServer</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
-            <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>com.dz015.tg.service</param-value>
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>com.dz015.tg.config.TGResourceConfig</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Twisted Gallery Service</servlet-name>
+        <servlet-name>TGServer</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 

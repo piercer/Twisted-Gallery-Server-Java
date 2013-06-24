@@ -11,8 +11,4 @@ dependencies {
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.0'
     compile 'org.glassfish.jersey.core:jersey-client:2.0'
 
-    compile 'org.springframework:spring-context:3.2.3.RELEASE'
-    compile 'org.springframework:spring-core:3.2.3.RELEASE'
-    compile 'org.springframework:spring-web:3.2.3.RELEASE'
-
 }
