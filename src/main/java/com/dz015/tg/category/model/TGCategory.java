@@ -13,4 +13,8 @@ public class TGCategory {
     public String getName() {
         return name;
     }
+
+    public void addParent(long parentID, String parentName) {
+        System.out.println("Adding parent: "+parentID+">"+parentName);
+    }
 }
