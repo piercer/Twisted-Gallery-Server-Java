@@ -24,6 +24,7 @@
           <element id="library" level="project" name="javax.inject-2.1.88" />
           <element id="library" level="project" name="asm-all-repackaged-2.1.88" />
           <element id="library" level="project" name="osgi-resource-locator-1.0.1" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.25" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Twisted_Gallery_Server/web/Web" />

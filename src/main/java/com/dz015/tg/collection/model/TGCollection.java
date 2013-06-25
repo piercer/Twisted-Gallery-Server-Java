@@ -1,4 +1,4 @@
-package com.dz015.tg.model;
+package com.dz015.tg.collection.model;
 
 public class TGCollection {
 

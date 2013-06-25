@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/">
+    <Resource name="jdbc/twistedgallery" auth="Container" type="javax.sql.DataSource"
+        username="root"
+        password=""
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/twistedgallery"
+        maxActive="15"
+        maxIdle="7"
+        defaultTransactionIsolation="READ_COMMITTED"
+        validationQuery="Select 1" />
 </Context>

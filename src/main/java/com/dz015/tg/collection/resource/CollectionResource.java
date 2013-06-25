@@ -1,4 +1,4 @@
-package com.dz015.tg.resource;
+package com.dz015.tg.collection.resource;
 
 import com.dz015.tg.service.data.TGDataService;
 

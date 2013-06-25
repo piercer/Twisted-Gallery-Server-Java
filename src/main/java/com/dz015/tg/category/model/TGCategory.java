@@ -1,4 +1,4 @@
-package com.dz015.tg.model;
+package com.dz015.tg.category.model;
 
 public class TGCategory {
 
