@@ -10,5 +10,6 @@ dependencies {
 
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.0'
     compile 'org.glassfish.jersey.core:jersey-client:2.0'
+    compile 'mysql:mysql-connector-java:5.1.25'
 
 }
