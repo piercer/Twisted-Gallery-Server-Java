@@ -42,7 +42,7 @@ public class MySqlTGDataService implements TGDataService {
             statement.setLong(1, categoryId);
             statement.execute();
             //
-            // Category parents are in the first rewsult set
+            // Category parents are in the first result set
             //
             ResultSet rs = statement.getResultSet();
             while (rs.next()) {
