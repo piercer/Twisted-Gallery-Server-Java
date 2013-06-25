@@ -34,7 +34,6 @@
           <element id="library" level="project" name="aopalliance-1.0" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="Twisted_Gallery_Java_Server/web/Web" />
     </root>
   </artifact>
 </component>
