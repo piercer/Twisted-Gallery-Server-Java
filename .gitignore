@@ -3,3 +3,4 @@ build/
 workspace.xml
 libraries/
 out/
+.gradle
