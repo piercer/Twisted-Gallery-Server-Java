@@ -1,7 +1,9 @@
-package com.dz015.tg.config;
+package com.dz015.tg.application;
 
-import com.dz015.tg.service.data.MySqlTGDataService;
-import com.dz015.tg.service.data.TGDataService;
+import com.dz015.tg.category.service.CategoryService;
+import com.dz015.tg.category.service.MySqlCategoryService;
+import com.dz015.tg.collection.service.CollectionService;
+import com.dz015.tg.collection.service.MySqlCollectionService;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 
 import javax.inject.Singleton;
@@ -27,7 +29,8 @@ public class TGBinder extends AbstractBinder {
         catch (NamingException e) {
 
         }
-        bind(MySqlTGDataService.class).to(TGDataService.class).in(Singleton.class);
+        bind(MySqlCategoryService.class).to(CategoryService.class).in(Singleton.class);
+        bind(MySqlCollectionService.class).to(CollectionService.class).in(Singleton.class);
 
     }
 

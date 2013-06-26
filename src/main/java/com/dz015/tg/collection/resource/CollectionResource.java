@@ -1,6 +1,6 @@
 package com.dz015.tg.collection.resource;
 
-import com.dz015.tg.service.data.TGDataService;
+import com.dz015.tg.collection.service.CollectionService;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -11,7 +11,7 @@ import javax.ws.rs.PathParam;
 public class CollectionResource {
 
     @Inject
-    private TGDataService dataService;
+    private CollectionService dataService;
 
     @GET
     public String getCollection(@PathParam("id") long id) {

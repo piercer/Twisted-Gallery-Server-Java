@@ -1,6 +1,6 @@
 package com.dz015.tg.category.resource;
 
-import com.dz015.tg.service.data.TGDataService;
+import com.dz015.tg.category.service.CategoryService;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -11,7 +11,7 @@ import javax.ws.rs.PathParam;
 public class CategoryResource {
 
     @Inject
-    private TGDataService dataService;
+    private CategoryService dataService;
 
     @GET
     public String getCategory(@PathParam("id") long id) {
