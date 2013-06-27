@@ -16,7 +16,6 @@ public class TGCategory {
     private final int nItems;
     private final int previewId;
 
-
     private TGCategory(CategoryBuilder builder) {
         this.id = builder.id;
         this.name = builder.name;
@@ -59,6 +58,10 @@ public class TGCategory {
 
     public String getDescription() {
         return description;
+    }
+
+    public int getPreviewId() {
+        return previewId;
     }
 
     public static class CategoryBuilder {
