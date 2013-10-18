@@ -23,6 +23,9 @@ public class MySqlCollectionService implements CollectionService {
         ) {
             statement.setLong(1, collectionId);
             ResultSet rs = statement.executeQuery();
+            if (rs==null) {
+                return null;
+            }
         }
         catch (SQLException e) {
             System.out.println(e.toString());

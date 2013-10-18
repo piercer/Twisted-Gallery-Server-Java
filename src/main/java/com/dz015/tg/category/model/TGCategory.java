@@ -2,8 +2,10 @@ package com.dz015.tg.category.model;
 
 import com.dz015.tg.collection.model.TGCollection;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Collection;
 
+@XmlRootElement(name="category")
 public class TGCategory {
 
     private final String name;

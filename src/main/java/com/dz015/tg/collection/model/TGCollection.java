@@ -1,7 +1,8 @@
 package com.dz015.tg.collection.model;
 
-import java.util.Collection;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement(name="collection")
 public class TGCollection {
 
     private final String name;

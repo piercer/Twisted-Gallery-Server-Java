@@ -32,6 +32,9 @@ public class MySqlCategoryService implements CategoryService {
             //
             ArrayList<TGCategory> parents = new ArrayList<>();
             ResultSet rs = statement.getResultSet();
+            if (rs==null) {
+                return null;
+            }
             while (rs.next()) {
                 id = rs.getLong(1);
                 name = rs.getString(2);

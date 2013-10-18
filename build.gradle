@@ -9,7 +9,8 @@ dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
     providedCompile 'mysql:mysql-connector-java:5.1.25'
 
-    compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.0'
-    compile 'org.glassfish.jersey.core:jersey-client:2.0'
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.3.1'
+    compile 'org.glassfish.jersey.core:jersey-client:2.3.1'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.3.1'
 
 }
