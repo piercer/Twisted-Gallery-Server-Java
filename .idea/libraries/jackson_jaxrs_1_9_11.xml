@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jackson-jaxrs-1.9.11">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.codehaus.jackson/jackson-jaxrs/1.9.11/jar/3fb44a934e6241765cbab53341ceab0819cf742a/jackson-jaxrs-1.9.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

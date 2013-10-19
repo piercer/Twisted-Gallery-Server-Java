@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jersey-container-servlet-2.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.glassfish.jersey.containers/jersey-container-servlet/2.3.1/jar/32971767c13aeb5b321634e9aad9d9264acc4aac/jersey-container-servlet-2.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
