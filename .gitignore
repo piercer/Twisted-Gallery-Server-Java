@@ -4,3 +4,5 @@ workspace.xml
 libraries/
 out/
 .gradle
+.idea
+twisted-gallery-server.iml
