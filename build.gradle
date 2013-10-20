@@ -12,5 +12,8 @@ dependencies {
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.3.1'
     compile 'org.glassfish.jersey.core:jersey-client:2.3.1'
     compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.3.1'
+    compile 'org.glassfish.jersey.containers:jersey-container-grizzly2-http:2.3.1'
+    compile 'org.glassfish.grizzly:grizzly-http-server:2.1'
+    compile 'commons-dbcp:commons-dbcp:1.4'
 
 }
