@@ -14,5 +14,6 @@ public class TGResourceConfig extends ResourceConfig {
         register(new TGBinder());
         packages("com.dz015.tg.category.resource");
         packages("com.dz015.tg.collection.resource");
+        packages("com.dz015.tg.item.resource");
     }
 }
