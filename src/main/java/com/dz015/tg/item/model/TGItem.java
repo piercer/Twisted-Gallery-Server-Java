@@ -9,7 +9,7 @@ public class TGItem {
     private final String path;
     private final Set<TGMetaData> metaData;
 
-    private TGItem(TGItemBuilder builder) {
+    private TGItem(ItemBuilder builder) {
         this.id = builder.id;
         this.path = builder.path;
         metaData = builder.metaData;
@@ -27,23 +27,23 @@ public class TGItem {
         return metaData;
     }
 
-    public static class TGItemBuilder {
+    public static class ItemBuilder {
 
         private final Set<TGMetaData> metaData;
         private final long id;
         private String path;
 
-        public TGItemBuilder(long id) {
+        public ItemBuilder(long id) {
             this.id = id;
             metaData = new HashSet<>();
         }
 
-        public TGItemBuilder path(String value) {
+        public ItemBuilder path(String value) {
             path = value;
             return this;
         }
 
-        public TGItemBuilder metaData(String name, String value) {
+        public ItemBuilder metaData(String name, String value) {
             metaData.add(new TGMetaData.MetaDataBuilder(name, value).build());
             return this;
         }

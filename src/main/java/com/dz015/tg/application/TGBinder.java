@@ -4,6 +4,8 @@ import com.dz015.tg.category.service.CategoryService;
 import com.dz015.tg.category.service.MySqlCategoryService;
 import com.dz015.tg.collection.service.CollectionService;
 import com.dz015.tg.collection.service.MySqlCollectionService;
+import com.dz015.tg.item.service.ItemService;
+import com.dz015.tg.item.service.MySqlItemService;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 
@@ -52,6 +54,7 @@ public class TGBinder extends AbstractBinder {
         //
         bind(MySqlCategoryService.class).to(CategoryService.class).in(Singleton.class);
         bind(MySqlCollectionService.class).to(CollectionService.class).in(Singleton.class);
+        bind(MySqlItemService.class).to(ItemService.class).in(Singleton.class);
 
     }
 

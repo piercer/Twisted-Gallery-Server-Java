@@ -11,6 +11,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import static com.dz015.tg.category.model.TGCategory.CategoryBuilder;
+
 public class MySqlCategoryService implements CategoryService {
 
     @Inject
@@ -39,7 +41,7 @@ public class MySqlCategoryService implements CategoryService {
                 id = rs.getLong(1);
                 name = rs.getString(2);
                 description = rs.getString(3);
-                parents.add(new TGCategory.CategoryBuilder(id, name).description(description).build());
+                parents.add(new CategoryBuilder(id, name).description(description).build());
             }
             //
             // Sub categories are next
@@ -54,7 +56,7 @@ public class MySqlCategoryService implements CategoryService {
                 int nCollections = rs.getInt(4);
                 int nItems = rs.getInt(5);
                 int previewId = rs.getInt(7);
-                subCategories.add(new TGCategory.CategoryBuilder(id, name)
+                subCategories.add(new CategoryBuilder(id, name)
                         .description(description)
                         .nCollections(nCollections)
                         .nItems(nItems)
@@ -82,7 +84,7 @@ public class MySqlCategoryService implements CategoryService {
             //
             int nParents = parents.size();
             TGCategory thisCategory = parents.get(nParents - 1);
-            return new TGCategory.CategoryBuilder(thisCategory.getId(), thisCategory.getName())
+            return new CategoryBuilder(thisCategory.getId(), thisCategory.getName())
                     .parents(parents)
                     .subCategories(subCategories)
                     .collections(collections)
