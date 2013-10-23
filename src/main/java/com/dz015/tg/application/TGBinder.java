@@ -45,6 +45,7 @@ public class TGBinder extends AbstractBinder {
             dataSource.setValidationQuery(prop.getProperty("validationQuery"));
 
             bind(dataSource).to(DataSource.class);
+            bind(prop).to(Properties.class);
         }
         catch (IOException e) {
             Logger.getLogger(TGBinder.class.getName()).log(Level.SEVERE, "Error initialising application datasource: " + e.getMessage());
