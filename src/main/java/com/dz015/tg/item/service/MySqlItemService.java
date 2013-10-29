@@ -39,7 +39,7 @@ public class MySqlItemService implements ItemService {
             // Sub categories are next
             //
             statement.getMoreResults();
-            return new ItemBuilder(itemId).path(path.toString()).build();
+            return new ItemBuilder(itemId).at(path.toString()).build();
         }
         catch (SQLException e) {
             System.out.println(e.toString());

@@ -1,6 +1,5 @@
 package com.dz015.tg.item.model;
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class TGItem {
@@ -8,11 +7,17 @@ public class TGItem {
     private final long id;
     private final Set<TGMetaData> metaData;
     private final boolean published;
+    private final String type;
+    private final String server;
+    private final String path;
 
     private TGItem(ItemBuilder builder) {
         id = builder.id;
         metaData = builder.metaData;
         published = builder.published;
+        type = builder.type;
+        server = builder.server;
+        path = builder.path;
     }
 
     public long getId() {
@@ -27,23 +32,37 @@ public class TGItem {
         return published;
     }
 
+    public String getServer() {
+        return server;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
     public static class ItemBuilder {
 
-        private final Set<TGMetaData> metaData;
-        private final long id;
+        private Set<TGMetaData> metaData;
+        private long id;
         private boolean published;
+        private String type;
+        private String server;
+        private String path;
 
         public ItemBuilder(long id) {
             this.id = id;
-            metaData = new HashSet<>();
         }
 
-        public ItemBuilder metaData(String name, String value) {
-            metaData.add(new TGMetaData.MetaDataBuilder(name, value).build());
+        public ItemBuilder withMetaData(Set<TGMetaData> value) {
+            metaData = value;
             return this;
         }
 
-        public ItemBuilder published(boolean value) {
+        public ItemBuilder isPublished(boolean value) {
             published = value;
             return this;
         }
@@ -52,5 +71,19 @@ public class TGItem {
             return new TGItem(this);
         }
 
+        public ItemBuilder fromServer(String value) {
+            server = value;
+            return this;
+        }
+
+        public ItemBuilder at(String value) {
+            path = value;
+            return this;
+        }
+
+        public ItemBuilder ofType(String value) {
+            type = value;
+            return this;
+        }
     }
 }
